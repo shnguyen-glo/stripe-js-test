@@ -11,9 +11,10 @@ Node version:
 After clone project:
 
 ### Setup package:
+Create your own stripe-js key: https://dashboard.stripe.com/login
 ```
+- edit with your stripe-js key in file: /package/client/html/card-class.js, line 3: this.publishableKey = 'YOUR_STRIPE_KEY';
 - cd stripe-js-test/server/node
-- cp .env.example .env (Get your own stripe-js key by register account: https://dashboard.stripe.com/login)
 - yarn install
 - yarn start
 ```
